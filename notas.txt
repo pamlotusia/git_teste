@@ -1,0 +1,113 @@
+notas:
+
+git init - pra inicar repositorio
+
+git status - para veirificar mudanças, o que estiver no git status é o que nao está no servidor ainda
+
+git add - para coloca-lo dentro do git e ele ser reconhecido 
+git add . - coloca varios arquivos de uma vez sem que você tenha que nomea-los um por um
+
+git commit - para salvar mudanças
+git commit -m    - a flag -m é para nomear o commit, como uma boa pratica, é uma mensagem
+git commit -a    - a flag -a é para salvar varios arquivos de uma vez sem que tenha que nomea-los um por um
+ --é possivel comitar arquivo sem salva-lo toda vez, desde que ele já tenha recebido um primeiro add, basta usar o comando acima
+
+//trocando nome do arquivo por um mais semantico, mas esse comentario será apagado
+//quando você muda o nome do arquivo, ele passa a ser untracked, entao só tentar commitar sem dar add nao vai funcionar porque o git não o reconhece
+//dei commit antes de finalizar o comentario, bagunçou um pouco. mas em resumo, não dá, apenas com:
+// git commit -a -m , do contrario tem que fazer o add
+
+git push - para enviar finalmente o código para o repositorio remoto, até então ele estava salvo, mas não tinha sido enviado ainda 
+
+git pull - recebe arquivos do repositorio remoto para sua maquina, ou seja , o que está salvo no github (por exemplo) passa a estar no seu computador. Assim você tem a versão mais atualizada do código do projeto (sabendo que geralmente tem várias pessoas envolvidas na construção do projeto). Não é necessário fazer mais nenhum comando, apenas o git pull faz tudo o que é preciso
+//Portanto, git push envia, git pull recebe.
+
+git clone - para iniciar um repositorio de um projeto novo já em andamento por outras pessoas, precisamos clonar ele. Nao usamos git init, porque é um repositorio já existente, o que fazemos é nos juntarmos ao time clonando e referenciando o repositorio com git clone. O comando vai literalmente clonar o repositorio pra sua maquina, de forma que as proximas alterações que voce fizer já estarão referenciadas àquele endereço
+// git clone [endereço url]
+//não entendi muito bem, deu erro aqui na hora de trocar de pastas pelo terminal usando o comando cd, depois na hora de clonar, clonou as pastas de um jeito estranho. Eu não esperava que a pasta "primeiro_repo" fosse clonada nessa hierarquia, achei que somente os arquivos dela viriam pra mim
+//e mais, agora quando vou dar push aparece:
+// git remote add <name> <url>
+
+//and then push using the remote name
+
+//   git push <name>
+//nao sei porquê, mas sei que se eu seguir as instruções funciona. Porém não parece 100% certo, devo ter perdido alguma coisa pelo caminho
+//bom, nada funcionou, tive que excluir a pasta principal do computador e só dai clonar o repositorio na maquina, acredito que o problema
+//tenha sido exatamente esse, navegar entre as pastas. Quando clonei, fiz isso na pasta generica "Downloads" do pc, nem mesmo abri uma pasta
+//"curso_git" porque estava dando problema. Aparentemente deu certo, espero não ter que lidar com isso de novo, fiz os testes com git status
+//e git remote -v, agora o endereço aparece certinho. Ah, outra coisa, antes de aagar tudo, os testes com git remote -v retornavam vazio, 
+//como se nao tivesse endereço nem nada, mas quando eu tentei fazer alguns push seguindo as instruções dava que o nome já existia, acho que
+//só dá pra fazer uma vez. Enfim, uma merda.
+
+git rm - para remover arquivo ou pasta, basta usar o comando e o nome do arquivo, depois realizar o commit e o push normalmente
+
+git log - para verificar os commits feitos (um breve resumo, só o titulo do commit, data e autor)
+//dá pra verificar as alterações desde o primeiro commit, mesmo que o meu repositorio local seja um clone, que legal. Eu achei que não dava porque eu tive que clonar pra resolver o problema e o historico não estava aparecendo por completo, mas eu tava usando o scroll do mouse, não a setinha do teclado, por isso não descia. Adorei essa info, amei mesmo.
+
+git mv - para renomear ou alterar localização entre as pastas sem perder a referencia com o git. Ele exclui o arquivo anterior e cria um novo. é necessário realizar commit e push para finalizar a alteração.
+--git mv <nome_atual_do_arquivo> <nome_que_é_pra_ser_ou_endereço_completo_que_é_para_estar>
+//um detalhe, é preciso respeitar a hierarquia de pastas, entao se o arquivo vai para uma pasta que está dentro de outra pasta (uma pasta mãe, por assim dizer)
+//você precisa declarar as duas na linha de comando, pra que seja efetuado corretamente, do contrario a localização não vai ser encontrada
+
+git checkout - retorna ao estado original, que é o estado que está no repositorio remoto
+-- git checkout <nome_completo_do_arquivo>
+//se você fizer uma alteração no arquivo e se arrependeu, mas apagar até deixar e-xa-ta-men-te igual ao que está no repositorio, não precisa usar o git checkou, você vai conferir com git status e perceber que ele não identificou nehuma alteração.
+//porém fazer na mão não é uma boa prática porque sai errado, então usamos o git checkout pra voltarmos ao estado inicial(ultimo endpoint do repositorio remoto)
+//esse comando apaga automaticamente as alterações do arquivo, por isso, CUIDADO. Você pode acabar perdendo todo o seu trabalho
+//agora um teste, vamos ver se o git checkout apaga desde o commit ou só arquivos nao commitados, ou seja, salvos ainda
+//naaaaao, ele volta apenas ao momento em que você não fez o commit ainda. Depois de feito o commit, você vai precisar de outra forma para cancelar ou apagar ele.
+//eu escrevi a frase e dei commit, logo em seguida dei checkout e ele não apagou minha frase, dei push e meu commit subiu 🥴. Ou seja, o checkout só apaga se as alterações não estiverem sido commitadas.
+
+.gitignore - arquivo criado na raiz do projeto e nele inserimos os arquivos que não devem entrar no versionamento(ou seja, subir para o repositorio remoto)
+//isso é muito util para arquivos gerados automaticamente ou com informações sensíveis (.venv é um exemplo que eu já vi (é um ambiente virtual))
+//obs: primeiro criar arquivo .gitignore e declarar o nome dos arquivos e pastas que deverão ser ignorados, DEPOIS criar essas pastas no repositorio local, area de trabalho e afins.
+//importante, o arquivo .gitignore vai subir para o repositorio remoto, mas os arquivos declarados nele não, essa é a magia da coisa
+
+git reset - reseta o codigo a partir do ultimo endpoint do repositorio remoto, incluindo os commits que foram feitos. Ou seja, ele apaga tudo mesmo 😱😱😱
+// git reset --hard origin/main: a flag --hard força esse reset e o origin/main é o repositorio que você quer parear (algo assim, nao entendi 100%, mas gostei)
+
+git branch - verificar os branches existentes
+
+git branch <nome_novo_branch> - cria novo branch. Apenas criar novos branches a partir da branch master, porque as outras branches são usadas pra teste. Logo, se você criar um novo ambiente de uma branch que não seja a master, vai estar carregando codigo não testado, o que é uma pessima pratica porque agrava os problemas e a manutenção.
+
+git branch -d (para branches lociais) ou git branch --delete   - as flags -d ou --delete deletam branches, o que não é muito comum, geralmente se mantém para nao perder o historico. Então cuidado ao apagar branches. No mais, só apagamos branches se ela foi criado errado (não cumpre o padrão da criação que foi estabelecido etc etc).
+git push origin --delete <nome_da_branch>(para branches remotas)
+
+git checkout <nome_da_branch> - esse comando muda de branch.
+--git checkout -b <nome_da_branch> - a flag -b tambem cria ao mesmo tempo que muda (se o branch já nao tiver sido criado)
+//🚨🧨💣CUIDADO AO MUDAR DE BRANCH SEM DAR COMMIT ANTES, PODE DAR MUITO TIRO PORRADA E BOMBA💣🧨🚨
+
+git merge - une branches, porém é incomum no mercado de trabalho que 'Você' una a sua branch de trabalho com a branch principal, outras pessoas fazem isso, por outros meios, para garantir que o codigo que vai subir esteja aprovado coisa e tal. Tudo para garantir que a produção não fique comprometida.
+--git merge <nome_do_arquivo_que_a_branch_atual_vai_receber> - se usa assim, você ESTÁ na branch que vai receber o codigo, ou seja, o codigo declarado no comando e o que vai entrar :D 
+
+git push <remote> --delete <nome_do_branch>  - para excluir branch REMOTO 
+--git push origin --delete segundo_branch  - por exemplo
+
+git stash - uma especie de lixeira, jeito de jogar fora, mas que dá pra recuperar depois
+//as stashes são uteis quando você está trabalhando em uma solução que ainda nao está boa e você quer iniciar do zero, mas sem perder o seu progresso, sobrescrever ou perder suas ideias. Quando você quer salvar em algum lugar e revisitar depois você usa o comando git stash.
+//Dessa forma, seu codigo volta ao estado do ultimo push, mas aqueles codigos estarão salvos na lista de stashes
+
+git stash list - lista as stashes mostrando as versões
+
+git stash apply (numero_da_stash) - as stashes são ordenadas em numeros, usando o comando git stash list é capaz de verificar isso, entao quando for verificar os codigos da stash, basta chamar com o codigo acima da seguinte forma por exemplo:
+//git stash apply 0
+
+git tag -a <nome_da_tag> -m "<msg>"- dessa forma criamos tags, que são checkpoints do nosso codigo, quase uma branch do branch
+//É utilizada para demarcar estagios do desenvolvimento de algum recurso
+//antes de criar a tag é necessario commitar, dai ela vai salvar as alterações do ultimo commit até o momento do commit atual.
+
+git show <nome> - mostra em detalhes o conteudo da tag
+
+git checkout <nome> - podemos trocar entre as tags usando esse comando
+
+git push origin <nome> - podemos usar esse comando para enviar tags ao repositorio remoto. Dessa forma declaramos uma tag especifica e ela é enviada.
+
+git push origin --tags  - ou podemos enviar todas as tags que temos de uma vez.
+
+git push --delete origin <nome_da_tag> - deleta tag no repo remoto 
+//Aparentemente tem que declarar uma a uma, não funciona usando --tags pra deletar todas de uma vez
+git tag -d <nome_da_tag> - deleta tag no repo local 
+
+git fetch - você é atualizado de todos os branches e tags não reconhecidos por voce, é como um pull de branches
+//seu amigo abriu uma nova branch e agora você precisa acessar ela, mas ela ainda não está mapeada no seu terminal local, então o git fetch
+//trás essa nova branch pra você conseguir acessá-la
