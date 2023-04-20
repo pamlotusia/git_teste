@@ -111,3 +111,7 @@ git tag -d <nome_da_tag> - deleta tag no repo local
 git fetch - você é atualizado de todos os branches e tags não reconhecidos por voce, é como um pull de branches
 //seu amigo abriu uma nova branch e agora você precisa acessar ela, mas ela ainda não está mapeada no seu terminal local, então o git fetch
 //trás essa nova branch pra você conseguir acessá-la
+
+git show - dá informações da branch atual e também dos seus commits. as modificações entre cada arquivo também são exibidas
+//podemos exibir informações de tags tambem com o comando:
+git show <tag>
