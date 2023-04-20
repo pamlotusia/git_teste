@@ -116,7 +116,7 @@ git show - dá informações da branch atual e também dos seus commits. as modi
 //podemos exibir informações de tags tambem com o comando:
 git show <tag>
 
-git diff - mostra as diferenças de um branch, ele aceita alterações commitadas e nao commitadas. quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal
+git diff - mostra as diferenças de um branch, ele aceita alterações commitadas e nao commitadas, é justamente para comparar branch remoto com atual,de forma que se você fizer alterações e der push, elas nao vão ser sinalizadas no terminal, porque essa é a nova versão do repo remoto. quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal
 //podemos verificar também a diferenças entre arquivos: git diff <arquivo> <arquivo_b>
 //na comparação de branches, não é preciso declarar as duas da seguinte forma:
 // ❌ git diff <branch1> <branch2> - porque ele já está 'pegando' a branch atual como a 'branch1'. O sistema já faz isso pra voce
