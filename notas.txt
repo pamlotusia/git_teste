@@ -118,3 +118,5 @@ git show <tag>
 
 git diff - mostra as diferenças de um branch. quando utilizado as diferenças do branch atual com o remoto serão exibidas no terminal
 //podemos verificar também a diferenças entre arquivos: git diff <arquivo> <arquivo_b>
+
+aaaaaaaaaaaaaaaaaaaaaa
