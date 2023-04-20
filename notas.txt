@@ -123,6 +123,4 @@ git diff - mostra as diferenças de um branch, ele aceita alterações commitada
 //então, quando for comparar branches, faça assim:
 // ✅ git diff <branch2> - a branch2 é a branch que você vai comparar com a branch atual.
 
-
-aaaaaaaaaaaaaaaaaaaaaa
-bbbbbbbbbbbbbbbb
+git shortlog - resumo dos logs do projeto. cada commit será unido pelo nome do autor, podemos entao saber qual commit foi enviado e por quem"
