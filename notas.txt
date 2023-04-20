@@ -120,3 +120,4 @@ git diff - mostra as diferenças de um branch. quando utilizado as diferenças d
 //podemos verificar também a diferenças entre arquivos: git diff <arquivo> <arquivo_b>
 
 aaaaaaaaaaaaaaaaaaaaaa
+bbbbbbbbbbbbbbbb
