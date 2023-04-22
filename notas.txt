@@ -124,3 +124,6 @@ git diff - mostra as diferenças de um branch, ele aceita alterações commitada
 // ✅ git diff <branch2> - a branch2 é a branch que você vai comparar com a branch atual.
 
 git shortlog - resumo dos logs do projeto. cada commit será unido pelo nome do autor, podemos entao saber qual commit foi enviado e por quem"
+
+git clean - limpa os arquivos untracked do repositorio local, usado por exemplo para arquivos que são gerados automatimamente ou que foram baixados errado
+//git clean -f   - para forçar o comando, caso o terminal de controle reclame de alguma coisa
