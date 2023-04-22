@@ -134,3 +134,5 @@ git fsck - abreviação de File System Check. usado para verificar a integridade
 
 git reflog - mapea todos os seus passos dentro do repositorio, até mudança de branch é inserida nesse relatorio do reflog.
 por ser um relatorio detalhado, ele tem prazo de expiração, o padrãosão 30 dias, mas isso é configurável. 
+
+git reset --hard <endereço do commit/alteraçao> - reseta ao estado daquele commit, por exemplo
