@@ -130,3 +130,7 @@ git clean - limpa os arquivos untracked do repositorio local, usado por exemplo 
 
 git gc - abreviação de garbage collector. identifica quais arquivos não são mais necessarios e os exclui. Isso otimizará a performance do repositorio, porque ele terá menos tarefas para executar (tirando o lixo fora). é boa prátic afazer de tempos em tempos e em projetos grandes.
 
+git fsck - abreviação de File System Check. usado para verificar a integridade dos arquivos e sua conectividade. comando de rotina pra saber se está tudo nos conformes. 
+
+git reflog - mapea todos os seus passos dentro do repositorio, até mudança de branch é inserida nesse relatorio do reflog.
+por ser um relatorio detalhado, ele tem prazo de expiração, o padrãosão 30 dias, mas isso é configurável. 
