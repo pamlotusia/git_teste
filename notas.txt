@@ -133,6 +133,8 @@ git gc - abreviação de garbage collector. identifica quais arquivos não são 
 git fsck - abreviação de File System Check. usado para verificar a integridade dos arquivos e sua conectividade. comando de rotina pra saber se está tudo nos conformes. 
 
 git reflog - mapea todos os seus passos dentro do repositorio, até mudança de branch é inserida nesse relatorio do reflog.
-por ser um relatorio detalhado, ele tem prazo de expiração, o padrãosão 30 dias, mas isso é configurável. 
+por ser um relatorio detalhado, ele tem prazo de expiração, o padrão são 30 dias, mas isso é configurável. 
 
 git reset --hard <endereço do commit/alteraçao> - reseta ao estado daquele commit, por exemplo
+
+git archive --format zip --output <nome_da_pasta>.zip <nome_da_branch>  - esse comando zipa o repositorio local, o projeto. É usado quando estamos codando apenas em ambiente remoto e não temos como zipar usando a interface do computador como fariamos normalmente, é uma opção :D . 
