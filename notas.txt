@@ -127,3 +127,6 @@ git shortlog - resumo dos logs do projeto. cada commit será unido pelo nome do 
 
 git clean - limpa os arquivos untracked do repositorio local, usado por exemplo para arquivos que são gerados automatimamente ou que foram baixados errado
 //git clean -f   - para forçar o comando, caso o terminal de controle reclame de alguma coisa
+
+git gc - abreviação de garbage collector. identifica quais arquivos não são mais necessarios e os exclui. Isso otimizará a performance do repositorio, porque ele terá menos tarefas para executar (tirando o lixo fora). é boa prátic afazer de tempos em tempos e em projetos grandes.
+
