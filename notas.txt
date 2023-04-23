@@ -145,5 +145,11 @@ git archive --format zip --output <nome_da_pasta>.zip <nome_da_branch>  - esse c
 Uma private branch é basicamente uma branch normal (ou seja, não precisa de nenhum comando especial pra se abrir) que você define um nome diferente, você vai usá-la como playground e só depois enviará os codigos e commits pra branch oficial.
 Ao final da solução do problema, podemos fazer um rebase, que é o comando estrela desse show
 //git rebase <atual> <branch_teste> -i  -- a flag -i que vai permitir interação com os commits no terminal 
-
+Bom, com a extensão do GitLens fica mais fácil eliminar ou editar commits, a tela é bem intuitiva, ao finalizar as edições, basta clicar no icone ✔ ou algo parecido com esse que o commit será aprovado
+para comentar alguma coisa, basta colocar # antes da mensagem, assim ela será ignorada
+Pick significa 'levar' ou seguir adiante com aquele commit
+Squash significa deletar
+Reword é renomear commit
+O comando git rebase é responsavel por trazer o conteudo de uma branch ativa para outra, então fazemos todo esse trabalho com os commits para que o ambiente de trabalho fique organizado e semantico. Mas se você quiser fazer commits semanticos desde o inicio, sem a necessidade de abrir private branches, também pode, fique a vontade 👩🏽‍🚒👍🏽
+✅Assim finalizamos o assunto de private branch (que é uma boa prática, uma cultura), como fazer e usar
 
