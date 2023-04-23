@@ -153,3 +153,9 @@ Reword é renomear commit
 O comando git rebase é responsavel por trazer o conteudo de uma branch ativa para outra, então fazemos todo esse trabalho com os commits para que o ambiente de trabalho fique organizado e semantico. Mas se você quiser fazer commits semanticos desde o inicio, sem a necessidade de abrir private branches, também pode, fique a vontade 👩🏽‍🚒👍🏽
 ✅Assim finalizamos o assunto de private branch (que é uma boa prática, uma cultura), como fazer e usar
 
+🌸Boas práticas dos commits🌸
+  * Separar assunto do corpo da mensagem
+  * Assunto com no máximo 50 caracteres (para que fique visivel na tela sem cortar nenhuma palavra da mensagem)
+  * Assunto com letra inicial maiuscula
+  * Corpo com no máximo 72 caracteres
+  * Explicar o porquê e como da solução de forma breve, de forma que descreva sem ficar se repetindo. O código já está ali, você não precisa reescrevê-lo no commit 😉
