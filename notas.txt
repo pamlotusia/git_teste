@@ -70,7 +70,7 @@ git branch - verificar os branches existentes
 
 git branch <nome_novo_branch> - cria novo branch. Apenas criar novos branches a partir da branch master, porque as outras branches são usadas pra teste. Logo, se você criar um novo ambiente de uma branch que não seja a master, vai estar carregando codigo não testado, o que é uma pessima pratica porque agrava os problemas e a manutenção.
 
-git branch -d (para branches lociais) ou git branch --delete   - as flags -d ou --delete deletam branches, o que não é muito comum, geralmente se mantém para nao perder o historico. Então cuidado ao apagar branches. No mais, só apagamos branches se ela foi criado errado (não cumpre o padrão da criação que foi estabelecido etc etc).
+git branch -D (para branches locais) ou git branch --delete   - as flags -d ou --delete deletam branches, o que não é muito comum, geralmente se mantém para nao perder o historico. Então cuidado ao apagar branches. No mais, só apagamos branches se ela foi criado errado (não cumpre o padrão da criação que foi estabelecido etc etc).
 git push origin --delete <nome_da_branch>(para branches remotas)
 
 git checkout <nome_da_branch> - esse comando muda de branch.
