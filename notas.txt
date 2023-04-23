@@ -137,4 +137,10 @@ por ser um relatorio detalhado, ele tem prazo de expiração, o padrão são 30 
 
 git reset --hard <endereço do commit/alteraçao> - reseta ao estado daquele commit, por exemplo
 
-git archive --format zip --output <nome_da_pasta>.zip <nome_da_branch>  - esse comando zipa o repositorio local, o projeto. É usado quando estamos codando apenas em ambiente remoto e não temos como zipar usando a interface do computador como fariamos normalmente, é uma opção :D . 
+git archive --format zip --output <nome_da_pasta>.zip <nome_da_branch>  - esse comando zipa o repositorio local, o projeto. É usado quando estamos codando apenas em ambiente remoto e não temos como zipar usando a interface do computador como fariamos normalmente, é uma opção :D
+
+❗❗❗Atenção, tutorial de como usar private branches a seguir, assunto level 2 de complexidade, mantenha  a calma que tudo vai dar certo❗❗❗
+📌Por que usar private branch? Para termos uma area livre de trabalho, onde podemos escrever nossos commits livremente, sem atrapalhar os logs oficiais da empresa, prejudicando o entendimento da equipe sobre o projeto, função e afins. 
+👩🏽‍🚒 Certo, como fazer então?
+Uma private branch é basicamente uma branch normal (ou seja, não precisa de nenhum comando especial pra se abrir) que você define um nome diferente, você vai usá-la como playground e só depois enviará os codigos e commits pra branch oficial.
+
