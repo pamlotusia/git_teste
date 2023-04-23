@@ -143,4 +143,7 @@ git archive --format zip --output <nome_da_pasta>.zip <nome_da_branch>  - esse c
 📌Por que usar private branch? Para termos uma area livre de trabalho, onde podemos escrever nossos commits livremente, sem atrapalhar os logs oficiais da empresa, prejudicando o entendimento da equipe sobre o projeto, função e afins. 
 👩🏽‍🚒 Certo, como fazer então?
 Uma private branch é basicamente uma branch normal (ou seja, não precisa de nenhum comando especial pra se abrir) que você define um nome diferente, você vai usá-la como playground e só depois enviará os codigos e commits pra branch oficial.
+Ao final da solução do problema, podemos fazer um rebase, que é o comando estrela desse show
+//git rebase <atual> <branch_teste> -i  -- a flag -i que vai permitir interação com os commits no terminal 
+
 
