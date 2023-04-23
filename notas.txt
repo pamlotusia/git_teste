@@ -159,3 +159,4 @@ O comando git rebase é responsavel por trazer o conteudo de uma branch ativa pa
   * Assunto com letra inicial maiuscula
   * Corpo com no máximo 72 caracteres
   * Explicar o porquê e como da solução de forma breve, de forma que descreva sem ficar se repetindo. O código já está ali, você não precisa reescrevê-lo no commit 😉
+// para separar titulo e corpo do commit, basta não fechar as aspas e dar um enter no terminal, por fim fechar as aspas e enviar. É boa prática 'pular uma linha' nesse momento, para que fique organizado
