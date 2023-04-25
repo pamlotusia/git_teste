@@ -160,3 +160,12 @@ O comando git rebase é responsavel por trazer o conteudo de uma branch ativa pa
   * Corpo com no máximo 72 caracteres
   * Explicar o porquê e como da solução de forma breve, de forma que descreva sem ficar se repetindo. O código já está ali, você não precisa reescrevê-lo no commit 😉
 // para separar titulo e corpo do commit, basta não fechar as aspas e dar um enter no terminal, por fim fechar as aspas e enviar. É boa prática 'pular uma linha' nesse momento, para que fique organizado
+
+👾 Pequeno tour pelo GitHub 👾
+  * Issues, nada mais são do que lembretes ou post-it virtuais de uma tarefa para ser feita dentro daquele projeto. Os Issues são uma ferramenta para organização
+  * Pull request são pedidos de merge feitos pelos desenvolvedores. Uma vez que eles terminam de criar uma nova função em um branch de teste, eles enviam um Pull Request (similar a um pedido de análise) para que a pessoa responsavel por gerenciar o projeto, examine o codigo e aprove o merge, ou dê um feedback de alteração.
+  * Actions são ferramentas de deploy automatico.
+  * Projects é uma area mural para organizar o projeto em etapas, você pode escolher entre diferentes templates ou até criar o seu. Essa ferramenta é usada para gerenciar as entregas e as necessidades do projeto. Um card do Projects pode virar um Issue, basta configurá-lo.
+  * Wiki é onde é feita a documentação completa e detalhada do projeto, descrevendo as funções, bugs (como resolve-los e quais ainda não foram resolvidos, o que eles provocam e em qual situação atacam), tudo. O objetivo dela ser detalhada é ajudar os desenvolvedores novos a se integrar com mais facilidade ao projeto e aos antigos relembrá-los do que foi feito. Por isso, é muito importante ser bastante detalhista.
+  * Insights é o historico de ações do projeto, também é um ferramenta de genreciamento. Nele é possivel ver os pull requests abertos e resolvidos, issues abertas e fechadas, quem fez forks, quantos foram feitos, frequencia que codigo é inputado etc etc.
+  * Settings são as configurações do repositorio, nome, visibilidade, colaboradores, actions, branches etc etc. 
