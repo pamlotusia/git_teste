@@ -30,4 +30,8 @@ _um **texto** combinado_
 [![Google icon](https://cdn-icons-png.flaticon.com/512/720/720255.png)](http://www.google.com/)
 
 ## trecho de código
-```console.log('oi')```
+```javascript
+    function soma(a, b){
+      return a + b;
+    } 
+```
