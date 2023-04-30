@@ -169,3 +169,13 @@ O comando git rebase é responsavel por trazer o conteudo de uma branch ativa pa
   * Wiki é onde é feita a documentação completa e detalhada do projeto, descrevendo as funções, bugs (como resolve-los e quais ainda não foram resolvidos, o que eles provocam e em qual situação atacam), tudo. O objetivo dela ser detalhada é ajudar os desenvolvedores novos a se integrar com mais facilidade ao projeto e aos antigos relembrá-los do que foi feito. Por isso, é muito importante ser bastante detalhista.
   * Insights é o historico de ações do projeto, também é um ferramenta de genreciamento. Nele é possivel ver os pull requests abertos e resolvidos, issues abertas e fechadas, quem fez forks, quantos foram feitos, frequencia que codigo é inputado etc etc.
   * Settings são as configurações do repositorio, nome, visibilidade, colaboradores, actions, branches etc etc. 
+
+😎 Tour pelo Markdown 😎
+  * Markdown é uma linguagem de marcação com extensão .md 
+  * É possivel colocar edições de texto, imagens e trechos de código nela 
+  * # é usado para representar titulos, # é h1, ## é h2 e ### é h3
+  * negrito: **texto** ou __texto__
+  * itálico: *texto* ou _texto_
+  * combinando os dois: _um **texto** combinado_
+  * listas ordenadas: 1. item
+  * listas não ordenadas: * item
