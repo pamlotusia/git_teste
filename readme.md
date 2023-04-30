@@ -17,5 +17,8 @@ _um **texto** combinado_
     1. sub item um
     2. sub item dois
 
-##Hora da Hello Kitty
+## Hora da Hello Kitty
 ![hello kitty](https://ogimg.infoglobo.com.br/cultura/13748681-aea-0a0/FT1086A/Hello.jpg)
+
+## Agora a Kuromi, direto dos arquivos
+![Kuromi](images/kuromi.png)
