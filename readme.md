@@ -22,3 +22,7 @@ _um **texto** combinado_
 
 ## Agora a Kuromi, direto dos arquivos
 ![Kuromi](images/kuromi.png)
+
+##links
+[google.com](http://www.google.com/)
+[https://cdn-icons-png.flaticon.com/512/720/720255.png](http://www.google.com/)
