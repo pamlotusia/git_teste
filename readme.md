@@ -37,5 +37,5 @@ _um **texto** combinado_
 ```
 
 ## checkbox 
-- [x] terminar módulo
-- [] terminar curso
+[x] terminar módulo
+[ ] terminar curso
