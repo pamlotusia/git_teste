@@ -179,3 +179,5 @@ O comando git rebase é responsavel por trazer o conteudo de uma branch ativa pa
   * combinando os dois: _um **texto** combinado_
   * listas ordenadas: 1. item
   * listas não ordenadas: * item
+  * sub lista: mesma coisa da lista, só que com 4 espaços
+  * inserir imagem: ![Texto Alt](lisnk da imagem)
