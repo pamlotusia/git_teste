@@ -183,4 +183,4 @@ O comando git rebase é responsavel por trazer o conteudo de uma branch ativa pa
   * inserir imagem: ![Texto Alt](lisnk da imagem), funciona com imagem local tambme, basta colocar o endereço das pastas certinho
   * inserir links: [Texto link](link)
   * inserir codigo: ```codigo aqui```
-  * inserir checkbox: - [], [x] para preencher caixa
+  * inserir checkbox: - [ ] para caixa vazia, - [x] para preencher caixa
