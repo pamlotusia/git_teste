@@ -27,4 +27,4 @@ _um **texto** combinado_
 [google.com](http://www.google.com/)
 
 ## imagem com link
-![Google icon][https://cdn-icons-png.flaticon.com/512/720/720255.png](http://www.google.com/)
+[![Google icon](https://cdn-icons-png.flaticon.com/512/720/720255.png)](http://www.google.com/)
