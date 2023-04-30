@@ -35,3 +35,7 @@ _um **texto** combinado_
       return a + b;
     } 
 ```
+
+## checkbox 
+- [x] terminar módulo
+- [] terminar curso
